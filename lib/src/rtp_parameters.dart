@@ -805,9 +805,9 @@ class RtcpParameters extends RTCRTCPParameters {
     bool? reducedSize,
   }) {
     return RtcpParameters(
-      mux: mux ?? old.mux,
-      cname: cname ?? old.cname,
-      reducedSize: reducedSize ?? old.reducedSize,
+      mux: mux ?? true,
+      cname: cname ?? '',
+      reducedSize: reducedSize ?? true,
     );
   }
 
